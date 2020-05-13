@@ -4,8 +4,6 @@ metadata:
   name: pacmangit
   namespace: pacmangit
 spec:
-  host: >-
-    pacmangit-pacmangit.prod2-585724-8a2d3071712c7c965e5501bbbe7f8585-0001.mil01.containers.appdomain.cloud
   to:
     kind: Service
     name: pacmangit

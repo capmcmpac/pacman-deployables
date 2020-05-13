@@ -3,7 +3,6 @@ kind: Service
 metadata:
   labels:
     name: pacmangit
-    #rrr
   name: pacmangit
   namespace: pacmangit
 spec:
@@ -14,4 +13,4 @@ spec:
   selector:
     name: pacmangit
   sessionAffinity: None
-  type: ClusterIP
+  type: LoadBalancer
