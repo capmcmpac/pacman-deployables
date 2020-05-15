@@ -4,6 +4,8 @@ metadata:
   name: pacmangit
   namespace: pacmangit
 spec:
+  host: >-
+    pacman.dev-adv.net
   to:
     kind: Service
     name: pacmangit
