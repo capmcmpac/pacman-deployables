@@ -13,19 +13,12 @@ metadata:
     #nginx.org/server-snippets: "server_name ~^.*$;"
 spec:
   rules:
-  - host: pacman.dev-adv.net
+  - host: "*.pacman.dev-adv.net"
     http:
       paths:
       - path: /
         backend:
-          serviceName: pacmangit
-          servicePort: 80
-  - host: pacman.aks.dev-adv.net
-    http:
-      paths:
-      - path: /
-        backend:
-          serviceName: pacmangit
+          serviceName: pacman-svc
           servicePort: 80
 
           

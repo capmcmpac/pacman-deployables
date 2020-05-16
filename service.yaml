@@ -3,7 +3,7 @@ kind: Service
 metadata:
   labels:
     name: pacmangit
-  name: pacmangit
+  name: pacman-svc
   namespace: pacmangit
 spec:
   ports:
@@ -11,6 +11,6 @@ spec:
     protocol: TCP
     targetPort: 8080
   selector:
-    name: pacmangit
+    name: pacman-deploy
   sessionAffinity: None
   type: ClusterIP

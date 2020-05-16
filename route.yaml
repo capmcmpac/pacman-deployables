@@ -1,12 +1,12 @@
 kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
-  name: pacmangit
+  name: pacman-route
   namespace: pacmangit
 spec:
   to:
     kind: Service
-    name: pacmangit
+    name: pacman-svc
     weight: 100
   port:
     targetPort: 8080

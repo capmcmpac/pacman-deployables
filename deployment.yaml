@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     name: pacmangit
-  name: pacmangit
+  name: pacman-deploy
   labels:
     app: pacmangit
 spec:
