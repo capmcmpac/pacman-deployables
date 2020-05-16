@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    name: pacmangit
+    name: pacman-deploy
   name: pacman-deploy
   labels:
     app: pacmangit
@@ -10,17 +10,17 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      name: pacmangit
+      name: pacman-deploy
   template:
     metadata:
       labels:
-        name: pacmangit
+        name: pacman-deploy
     spec:
       serviceAccount: pacmangit
       containers:
       - image: docker.io/rfontain/pacman:v1
         imagePullPolicy: Always
-        name: pacmangit
+        name: pacman-container
         ports:
         - containerPort: 8080
         env:
