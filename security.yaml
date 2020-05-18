@@ -20,7 +20,7 @@ metadata:
   namespace: pacmangit
 subjects:
 - kind: ServiceAccount
-  name: pacmangitpwd
+  name: pacmangit
   namespace: pacmangit
 roleRef:
   kind: ClusterRole
