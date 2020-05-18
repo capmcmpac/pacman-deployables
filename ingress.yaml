@@ -10,16 +10,9 @@ metadata:
     nginx.ingress.kubernetes.io/cors-allow-origin: "*"
     nginx.ingress.kubernetes.io/cors-allow-credentials: "true"
     nginx.ingress.kubernetes.io/cors-allow-methods: "*"
-    #nginx.org/server-snippets: "server_name ~^.*$;"
+    nginx.ingress.kubernetes.io/server-alias: "ocpaws.pacman.dev-adv.net, aks.pacman.dev-adv.net"
 spec:
   rules:
-  - host: ocpaws.pacman.dev-adv.net
-    http:
-      paths:
-      - path: /
-        backend:
-          serviceName: pacman-svc
-          servicePort: 80
   - host: pacman.dev-adv.net
     http:
       paths:
