@@ -19,7 +19,7 @@ spec:
       serviceAccount: pacman-sa
       containers:
       - image: docker.io/rfontain/pacman:v1
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         name: pacman-container
         ports:
         - containerPort: 8080
