@@ -16,7 +16,7 @@ spec:
       labels:
         name: pacman-deploy
     spec:
-      serviceAccount: pacmangit
+      serviceAccount: pacman-sa
       containers:
       - image: docker.io/rfontain/pacman:v1
         imagePullPolicy: Always

@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: ServiceAccount
 metadata:
-  name: pacmangit
+  name: pacman-sa
   namespace: pacmangit
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
-  name: pacmangit
+  name: pacman-cr
 rules:
 - apiGroups: [""]
   resources: ["pods","nodes"]
@@ -16,13 +16,12 @@ rules:
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
-  name: pacmangit
-  namespace: pacmangit
+  name: pacman-crb
 subjects:
 - kind: ServiceAccount
   name: pacmangit
   namespace: pacmangit
 roleRef:
   kind: ClusterRole
-  name: pacmangit
+  name: pacman-cr
   apiGroup: rbac.authorization.k8s.io
