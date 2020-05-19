@@ -54,7 +54,7 @@ spec:
         #bleue
           #value: "rgb(59, 108, 170)"
         - name: MY_IMAGE
-          value: RedHat 
+          value: Red Hat 
         - name: MESSAGE
           value: "Initial Version"
 
