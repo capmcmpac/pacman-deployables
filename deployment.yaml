@@ -5,7 +5,7 @@ metadata:
     name: pacman-deploy
   name: pacman-deploy
   labels:
-    app: pacmangit
+    app: pacman
 spec:
   replicas: 1
   selector:
