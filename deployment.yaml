@@ -54,7 +54,7 @@ spec:
         #bleue
           value: "rgb(59, 108, 170)"
         - name: MY_IMAGE
-          value: IBM
+          value: IBM.v2
         - name: MESSAGE
           value: "Initial Version"
 
