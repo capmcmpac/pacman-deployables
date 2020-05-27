@@ -25,12 +25,15 @@ spec:
         - containerPort: 8080
         env:
         - name: MONGO_AUTH_USER 
-          value: admin      
+          valueFrom:
+            secretKeyRef:
+              name: pacman-secret
+              key: MONGO_AUTH_USER   
         - name: MONGO_AUTH_PWD
           valueFrom:
             secretKeyRef:
               name: pacman-secret
-              key: MONGO_SERVICE_HOST         
+              key: MONGO_AUTH_PWD         
         - name: MONGO_SERVICE_HOST
           valueFrom:
             configMapKeyRef:
