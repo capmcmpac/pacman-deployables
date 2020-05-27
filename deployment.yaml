@@ -3,9 +3,9 @@ kind: Deployment
 metadata:
   labels:
     name: pacman-deploy
+    app: pacman
   name: pacman-deploy
   labels:
-    app: pacman
 spec:
   replicas: 1
   selector:
@@ -75,4 +75,3 @@ spec:
         - name: MESSAGE
           value: "Initial Version"
 
-        
