@@ -24,26 +24,43 @@ spec:
         ports:
         - containerPort: 8080
         env:
-        - name: MONGO_SERVICE_HOST
-          # Single member MongoDB
-          # value: primarymongohere
-          # Replicaset (federated) MongoDB
-          value: b8eec768-c48d-4022-9c32-b6083afed0c9-0.bngflf7f0ktkmkdl3jhg.databases.appdomain.cloud
-          # Comment out MONGO_REPLICA_SET for the single-member Mongo
         - name: MONGO_AUTH_USER 
-          value: ibm_cloud_82d27531_5290_4a59_b1c4_5cbef1154ea3
-        - name: MONGO_REPLICA_SET
-          value: replset
+          value: admin      
         - name: MONGO_AUTH_PWD
-          value: f197cc208307f82e2e0de68b781f7a128cf6a98eed3e38e10fcf2309c6e91455
+          valueFrom:
+            secretKeyRef:
+              name: pacman-secret
+              key: MONGO_SERVICE_HOST         
+        - name: MONGO_SERVICE_HOST
+          valueFrom:
+            configMapKeyRef:
+              name: pacman-config
+              key: MONGO_SERVICE_HOST              
+        - name: MONGO_REPLICA_SET
+          valueFrom:
+            configMapKeyRef:
+              name: pacman-config
+              key: MONGO_REPLICA_SET
         - name: MONGO_DATABASE
-          value: admin
+          valueFrom:
+            configMapKeyRef:
+              name: pacman-config
+              key: MONGO_DATABASE
         - name: MY_MONGO_PORT
-          value: "30692"
+          valueFrom:
+            configMapKeyRef:
+              name: pacman-config
+              key: MONGO_PORT
         - name: MONGO_USE_SSL
-          value: "true"
+          valueFrom:
+            configMapKeyRef:
+              name: pacman-config
+              key: MONGO_USE_SSL
         - name: MONGO_VALIDATE_SSL
-          value: "false"
+          valueFrom:
+            configMapKeyRef:
+              name: pacman-config
+              key: MONGO_VALIDATE_SSL
         - name: MY_NODE_NAME
           valueFrom:
             fieldRef:
