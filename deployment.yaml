@@ -24,31 +24,31 @@ spec:
         ports:
         - containerPort: 8080
         env:
-        - name: MONGO_AUTH_USER 
+        - name: MONGODB_USER 
           valueFrom:
             secretKeyRef:
               name: pacman-secret
-              key: MONGO_AUTH_USER   
-        - name: MONGO_AUTH_PWD
+              key: MONGODB_USER 
+        - name: MONGODB_PASSWORD
           valueFrom:
             secretKeyRef:
               name: pacman-secret
-              key: MONGO_AUTH_PWD         
-        - name: MONGO_SERVICE_HOST
+              key: MONGODB_PASSWORD       
+        - name: DATABASE_SERVICE_NAME
           valueFrom:
             configMapKeyRef:
               name: pacman-config
-              key: MONGO_SERVICE_HOST              
+              key: DATABASE_SERVICE_NAME            
         - name: MONGO_REPLICA_SET
           valueFrom:
             configMapKeyRef:
               name: pacman-config
               key: MONGO_REPLICA_SET
-        - name: MONGO_DATABASE
+        - name: MONGODB_DATABASE
           valueFrom:
             configMapKeyRef:
               name: pacman-config
-              key: MONGO_DATABASE
+              key: MONGODB_DATABASE
         - name: MY_MONGO_PORT
           valueFrom:
             configMapKeyRef:
