@@ -53,7 +53,7 @@ spec:
           valueFrom:
             configMapKeyRef:
               name: pacman-config
-              key: MONGO_PORT
+              key: MY_MONGO_PORT
         - name: MONGO_USE_SSL
           valueFrom:
             configMapKeyRef:
