@@ -4,7 +4,6 @@ metadata:
   labels:
     app: pacman    
   name: pacman-route
-  namespace: pacmangit
 spec:
   to:
     kind: Service

@@ -5,7 +5,6 @@ metadata:
     app: pacman    
     name: pacman-svc
   name: pacman-svc
-  namespace: pacmangit
 spec:
   ports:
   - port: 80
