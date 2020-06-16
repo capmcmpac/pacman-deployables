@@ -74,7 +74,7 @@ spec:
         #bleue
           #value: "rgb(59, 108, 170)"
         - name: MY_IMAGE
-          value: REDHAT-ORIGIN
+          value: REDHAT
         - name: MESSAGE
           value: "Initial Version"
 
