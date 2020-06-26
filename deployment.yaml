@@ -68,11 +68,11 @@ spec:
           valueFrom:
             fieldRef:
               fieldPath: spec.nodeName
-        rouge
+        #rouge
         - name: COLOR
-          #value: "rgb(180, 33, 33)"
+          value: "rgb(180, 33, 33)"
         #bleue
-          value: "rgb(59, 108, 170)"
+          #value: "rgb(59, 108, 170)"
         - name: MY_IMAGE
           value: REDHAT
         - name: MESSAGE
