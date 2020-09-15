@@ -72,9 +72,9 @@ spec:
         - name: COLOR
              value: "rgb(180, 33, 33)"
         #blue
-           # value: "rgb(59, 108, 170)"
+           #value: "rgb(59, 108, 170)"
         - name: MY_IMAGE
-          value: Red Hat
+          value: REDHAT
         - name: MESSAGE
           value: "Initial Version"
 
