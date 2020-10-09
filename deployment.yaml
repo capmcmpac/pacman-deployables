@@ -74,7 +74,7 @@ spec:
         #blue
           #value: "rgb(59, 108, 170)"
         - name: MY_IMAGE
-          value: Prepa demo Michelin
+          value: Prepa demo 
         - name: MESSAGE
           value: "Initial Version"
 
