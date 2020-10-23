@@ -74,7 +74,7 @@ spec:
         #blue
           #value: "rgb(59, 108, 170)"
         #black
-          value: "rgb(0,0,0)
+          value: "rgb(0,0,0)"
         - name: MY_IMAGE
           value: DEMO MICHELIN
         - name: MESSAGE
