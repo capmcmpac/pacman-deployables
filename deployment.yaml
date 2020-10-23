@@ -76,9 +76,7 @@ spec:
         #black
           value: "rgb(0,0,0)"
         - name: MY_IMAGE
-          valueFrom:
-            fieldRef:
-              fieldPath: spec.nodeName
+          value: DEFAULT
         - name: MESSAGE
           value: "Initial Version"
 
