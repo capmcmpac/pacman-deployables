@@ -76,7 +76,9 @@ spec:
         #black
           value: "rgb(0,0,0)"
         - name: MY_IMAGE
-          value: DEMO MICHELIN
+          valueFrom:
+            fieldRef:
+              fieldPath: spec.nodeName
         - name: MESSAGE
           value: "Initial Version"
 
