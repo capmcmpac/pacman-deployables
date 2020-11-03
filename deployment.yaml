@@ -72,11 +72,11 @@ spec:
         #red
           #value: "rgb(180, 33, 33)"
         #blue
-          #value: "rgb(59, 108, 170)"
+          value: "rgb(59, 108, 170)"
         #black
-          value: "rgb(0,0,0)"
+          #value: "rgb(0,0,0)"
         - name: MY_IMAGE
-          value: DEFAULT
+          value: IBM
         - name: MESSAGE
           value: "Initial Version"
 
