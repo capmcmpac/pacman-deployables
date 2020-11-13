@@ -69,12 +69,12 @@ spec:
             fieldRef:
               fieldPath: spec.nodeName
         - name: COLOR
-        #red
+        #Rouge
           #value: "rgb(180, 33, 33)"
-        #blue
-          value: "rgb(59, 108, 170)"
-        #black
-          #value: "rgb(0,0,0)"
+        #Bleue
+          #value: "rgb(59, 108, 170)"
+        #Default
+          value: "rgb(0, 0, 0)"
         - name: MY_IMAGE
           value: IBM
         - name: MESSAGE
