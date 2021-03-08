@@ -18,7 +18,7 @@ spec:
     spec:
       serviceAccount: pacman-sa
       containers:
-      - image: docker.io/fdescolpro/pacman:1.0
+      - image: quay.io/jpacker/nodejs-pacman-app:latest
         imagePullPolicy: IfNotPresent
         name: pacman-container
         ports:
@@ -76,7 +76,7 @@ spec:
         #Default
           #value: "rgb(0, 0, 0)"
         - name: MY_IMAGE
-          value: Programmez.com
+          value: OpenLab
         - name: MESSAGE
           value: "Initial Version"
 
