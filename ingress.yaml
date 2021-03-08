@@ -8,7 +8,7 @@ metadata:
     kubernetes.io/ingress.class: nginx
 spec:
   rules:
-  - host: pacman.dev-adv.net
+  - host: pacman-openlab.dev-adv.net
     http:
       paths:
       - path: /
