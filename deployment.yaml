@@ -18,7 +18,7 @@ spec:
     spec:
       serviceAccount: pacman-sa
       containers:
-      - image: quay.io/jpacker/nodejs-pacman-app:latest
+      - image: docker.io/fdescolpro/pacman:1.0
         imagePullPolicy: IfNotPresent
         name: pacman-container
         ports:
