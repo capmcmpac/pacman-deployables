@@ -3,7 +3,7 @@ kind: ClusterRoleBinding
 metadata:
   labels:
     app: pacman    
-  name: pacman-crb
+  name: pacman-crb-openlab
 subjects:
 - kind: ServiceAccount
   name: pacman-sa
