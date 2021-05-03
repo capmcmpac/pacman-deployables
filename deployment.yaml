@@ -76,7 +76,7 @@ spec:
         #Default
           #value: "rgb(0, 0, 0)"
         - name: MY_IMAGE
-          value: Programmez.com
+          value: test1
         - name: MESSAGE
           value: "Initial Version"
 
